@@ -1,0 +1,10 @@
+node_modules
+dist
+target
+.env
+.env.local
+.vscode
+*.log
+.workspace
+scraps-frontend/.workspace
+.github/java-upgrade

@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Outfit:wght@100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 35 30% 98%;
+    --foreground: 210 20% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 210 20% 15%;
+
+    --popover: 35 30% 98%;
+    --popover-foreground: 210 20% 15%;
+
+    --primary: 160 50% 20%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 25 40% 96%;
+    --secondary-foreground: 210 20% 15%;
+
+    --muted: 35 20% 90%;
+    --muted-foreground: 210 10% 40%;
+
+    --accent: 25 80% 65%;
+    --accent-foreground: 210 20% 15%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 35 20% 90%;
+    --input: 35 20% 90%;
+    --ring: 160 50% 20%;
+
+    --radius: 1.25rem;
+
+    --sidebar-background: 160 50% 20%;
+    --sidebar-foreground: 35 30% 98%;
+    --sidebar-primary: 25 80% 65%;
+    --sidebar-primary-foreground: 160 50% 20%;
+    --sidebar-accent: 160 40% 15%;
+    --sidebar-accent-foreground: 35 30% 98%;
+    --sidebar-border: 160 40% 25%;
+    --sidebar-ring: 25 80% 65%;
+  }
+
+  .dark {
+    --background: 160 40% 10%;
+    --foreground: 35 30% 98%;
+
+    --card: 160 30% 12%;
+    --card-foreground: 35 30% 98%;
+
+    --popover: 160 40% 10%;
+    --popover-foreground: 35 30% 98%;
+
+    --primary: 25 80% 65%;
+    --primary-foreground: 160 40% 10%;
+
+    --secondary: 160 30% 15%;
+    --secondary-foreground: 35 30% 98%;
+
+    --muted: 160 20% 20%;
+    --muted-foreground: 160 10% 60%;
+
+    --accent: 25 80% 65%;
+    --accent-foreground: 160 40% 10%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 35 30% 98%;
+
+    --border: 160 30% 20%;
+    --input: 160 30% 20%;
+    --ring: 25 80% 65%;
+
+    --sidebar-background: 160 40% 10%;
+    --sidebar-foreground: 35 30% 98%;
+    --sidebar-primary: 25 80% 65%;
+    --sidebar-primary-foreground: 160 40% 10%;
+    --sidebar-accent: 160 30% 15%;
+    --sidebar-accent-foreground: 35 30% 98%;
+    --sidebar-border: 160 30% 20%;
+    --sidebar-ring: 25 80% 65%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    background-image: 
+      radial-gradient(at 0% 0%, hsla(38, 92%, 50%, 0.03) 0px, transparent 50%),
+      radial-gradient(at 100% 0%, hsla(162, 45%, 15%, 0.03) 0px, transparent 50%);
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Outfit', sans-serif;
+    letter-spacing: -0.03em;
+    @apply font-bold;
+  }
+}
+
+@layer utilities {
+  .shadow-premium {
+    box-shadow: 0 20px 50px -12px rgba(6, 78, 59, 0.08);
+  }
+  .shadow-soft {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.02);
+  }
+  .shadow-amber {
+    box-shadow: 0 10px 30px -5px rgba(245, 158, 11, 0.3);
+  }
+  .shadow-forest {
+    box-shadow: 0 10px 30px -5px rgba(6, 78, 59, 0.3);
+  }
+  
+  .glass {
+    @apply bg-background/70 backdrop-blur-xl border border-border/40;
+  }
+  
+  .card-premium {
+    @apply bg-card border border-border/40 rounded-[2rem] shadow-soft transition-all duration-500 overflow-hidden;
+  }
+  .card-premium:hover {
+    @apply shadow-premium -translate-y-2 border-primary/10;
+  }
+  
+  .btn-premium {
+    @apply relative inline-flex items-center justify-center gap-2 px-8 py-4 rounded-2xl font-black uppercase tracking-widest text-[10px] transition-all duration-300 active:scale-95;
+  }
+  .btn-premium-primary {
+    @apply btn-premium bg-primary text-primary-foreground hover:shadow-forest hover:-translate-y-0.5;
+  }
+  .btn-premium-accent {
+    @apply btn-premium bg-accent text-accent-foreground hover:shadow-amber hover:-translate-y-0.5;
+  }
+  .btn-premium-outline {
+    @apply btn-premium border-2 border-primary/30 bg-transparent text-primary hover:bg-primary/10 hover:border-primary/50;
+  }
+  
+  .text-forest { @apply text-primary; }
+  .text-amber { @apply text-accent; }
+  
+  .bg-forest { @apply bg-primary; }
+  .bg-amber { @apply bg-accent; }
+  
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes pulse-soft {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.8; transform: scale(1.05); }
+}
+.animate-pulse-soft {
+  animation: pulse-soft 4s ease-in-out infinite;
+}
