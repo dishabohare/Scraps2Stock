@@ -1,4 +1,4 @@
-Scraps2Stock — Surplus Food Redistribution Platform:
+# Scraps2Stock — Surplus Food Redistribution Platform:
 <img width="1494" height="896" alt="HomePage" src="https://github.com/user-attachments/assets/76d87129-2df6-4fc4-94f9-977e28a0909f" />
 Scraps2Stock is a web application that connects street food vendors with mandis, farms, and cold storages where surplus but edible raw materials are available at low cost. The main aim is to reduce food waste and lower the daily raw material cost for vendors.
 
@@ -8,7 +8,7 @@ Every day, a large quantity of vegetables, fruits, and raw materials go to waste
 Solution: 
 Scraps2Stock allows suppliers to post their surplus stock, and vendors can place bids to purchase it at lower prices. The platform also includes AI-based matching and spoilage prediction to minimize waste.
 
-Core Features: 
+# Core Features: 
 <img width="861" height="709" alt="Features" src="https://github.com/user-attachments/assets/9941c001-89e8-4cd8-89b2-0fc9ec7cbe07" />
 
 Suppliers can post surplus stock
@@ -25,7 +25,7 @@ Backend: Spring Boot
 Database: MySQL
 Authentication: JWT
 
-Snapshots of website:
+# Snapshots of website:
 Login and Signup:
 <img width="1216" height="846" alt="auth" src="https://github.com/user-attachments/assets/2258b246-7f19-452e-bf11-836cfb1068c9" />
 
