@@ -36,14 +36,14 @@ Authentication: JWT<br>
 <img width="1897" height="900" alt="DashBoard" src="https://github.com/user-attachments/assets/eb5400c9-8c98-4207-9c71-9373e8ab8c49" />
 
 # How to Run the Project
--To run the backend: clone the repository
--open it in your IDE
--run the Spring Boot application
--To run the frontend: go to the frontend folder
--run npm install
--run npm start
+- To run the backend: clone the repository
+- open it in your IDE
+- run the Spring Boot application
+- To run the frontend: go to the frontend folder
+- run npm install
+- run npm start
 
 # Future Scope:
--Real-time notifications
--Online payment integration
--Logistics partner integration
+- Real-time notifications
+- Online payment integration
+- Logistics partner integration
