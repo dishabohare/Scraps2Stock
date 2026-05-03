@@ -10,6 +10,7 @@ Scraps2Stock allows suppliers to post their surplus stock, and vendors can place
 
 Core Features: 
 <img width="861" height="709" alt="Features" src="https://github.com/user-attachments/assets/9941c001-89e8-4cd8-89b2-0fc9ec7cbe07" />
+
 Suppliers can post surplus stock
 Vendors can view live listings and place bids
 Reverse bidding system for best price discovery
