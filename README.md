@@ -25,9 +25,13 @@ Database: MySQL
 Authentication: JWT
 
 Snapshots of website:
+Login and Signup:
 <img width="1216" height="846" alt="auth" src="https://github.com/user-attachments/assets/2258b246-7f19-452e-bf11-836cfb1068c9" />
 
+Reverse Bidding Interface:
 <img width="1902" height="876" alt="Reverse Bidding" src="https://github.com/user-attachments/assets/aa1ee677-b24d-40ab-a9f5-40b96b7bb88e" />
+
+Vendore Dashboard:
 <img width="1897" height="900" alt="DashBoard" src="https://github.com/user-attachments/assets/eb5400c9-8c98-4207-9c71-9373e8ab8c49" />
 
 How to Run the Project
